@@ -1,0 +1,63 @@
+#square {
+position: absolute;
+left: 500px;
+width: 400px;
+height: 500px;
+background-color: red;
+}
+.color{
+  position: absolute;
+  left: 680px;
+  top: 100px;
+  color: white;
+}
+.animated {
+  text-indent: 8px;
+}
+.line{
+  font-size: 200%; 
+    border-bottom: 2px solid yellow;
+    font-weight: normal; 
+    padding-bottom: 5px;
+}
+.animated span {
+  color: white;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 670px;  
+  top: 150px;
+  -ms-animation: topToBottom 5s infinite;
+  -webkit-animation: topToBottom 5s infinite;
+  animation: topToBottom 5s infinite;
+}
+
+.animated span:nth-child(2){
+  -ms-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated span:nth-child(3){
+  -ms-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.animated span:nth-child(4){
+  -ms-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.animated span:nth-child(5){
+  -ms-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+
+@keyframes topToBottom {
+  0%, 20% {opacity: 1} /* visible for 1s */
+  20.01%, 100% {opacity: 0} /* hidden for 4s */
+}
